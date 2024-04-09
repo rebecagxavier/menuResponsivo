@@ -5,15 +5,16 @@
     font-family: 'Inter', sans-serif; 
 }
 
-header {
-    background-color: #24252a;
-    box-shadow: 0px 3px 10px #464646;
+body {
+    background-color: #303138;
+    padding: 1.5rem;
 }
 
 .nav-bar {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
+    
 }
 
 .logo {
@@ -28,17 +29,25 @@ header {
 
 .nav-list {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .nav-list ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     list-style: none;
+    padding: 30px 90px;
 }
 
 .nav-item {
-    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 15px;
+    margin: 10px;
+    border-style: solid; 
+    border-color:  rgb(234, 234, 241);
+    border-radius: 25px;
 }
 
 .nav-link {
@@ -46,20 +55,6 @@ header {
     font-size: 1.25rem;
     color: #fff;
     font-weight: 400;
-}
-
-.login-button button{
-    border: none;
-    background-color: #0187a7;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
-.login-button button a{
-    text-decoration: none;
-    color:#fff;
-    font-weight: 500;
-    font-size: 1.5rem;
 }
 
 .mobile-menu-icon {
@@ -70,52 +65,3 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 730px) {
-    .nav-bar{
-        padding: 1.5rem 4rem;
-    }
-    .nav-item {
-        display: none;
-    }
-
-    .login-button {
-        display: none;
-    }
-
-    .mobile-menu-icon{
-        display: block;
-    }
-
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-
-    .mobile-menu .login-button{
-        display: block;
-        padding: 1rem 2rem;
-
-    }
-    
-    .mobile-menu .login-button button{
-        width: 100%;
-    }
-
-    .open {
-        display: block;
-    }
-
-}
